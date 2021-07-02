@@ -1,0 +1,119 @@
+<style>
+    *{
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    }
+    header{
+        width: 100%;
+        height: 80px;
+    }
+    header .header-bc{
+        width: 100%;
+        height: 100%;
+    }
+    header .header-bc .nav{
+        width: 100%;
+        height: 100%;
+        background-color: brown;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header .header-bc .nav nav{
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    header .header-bc .nav nav div{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10px;
+        transition: .2s;
+        height: 100%;
+        width: 110px;
+        cursor: pointer;
+        background-color: crimson;
+    }
+    header .header-bc .nav nav div a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding: 10px 20px;
+        width: 100%;
+        height: 50%;
+        color: cornsilk;
+        font-size: 15px;
+        background-color: rgb(107, 163, 61);
+        transition: .2s;
+    }
+    header .header-bc .nav nav .primary-div:hover > a{
+        background-color: burlywood;
+        transform: translateY(-4px)
+    }
+    header .header-bc .nav nav div:hover > .home-class{
+        display: flex;
+    }
+    header .header-bc .nav nav .home .home-class{
+        position: absolute;
+        display: none;
+        z-index: 10;
+        height: 50px;
+        width: min-content;
+        background-color: rgb(27, 94, 93);
+        top: 80px;
+    }
+    header .header-bc .nav nav .home .home-class a{
+        height: 100%;
+        width: 80px;
+        margin: 0 1px;
+    }
+    header .header-bc .nav nav .home .home-class a:hover{
+        transform: translateY(-4px)
+    }
+</style>
+<header>
+    <div class="header-bc">
+        <div class="nav">
+            <nav>
+                <div class="home primary-div">
+                    <a href="#">Home</a>
+                    <div class="home-class">
+                        <a href="#">Loja</a>
+                        <a href="#">Sobre</a>
+                        <a href="#">Exemplo</a>
+                    </div>
+                </div>
+                <div class="sandal">
+                    <a href="#">Sandálhas</a>
+                </div>
+                <div class="ballet-shoes">
+                    <a href="#">Spatilhas</a>
+                </div>
+                <div class="sneakers">
+                    <a href="#">Tênis</a>
+                </div>
+                <div class="boot">
+                    <a href="#">Botas</a>
+                </div>
+                <div class="baduche">
+                    <a href="#">Baduche</a>
+                </div>
+                <div class="mother-daughter">
+                    <a href="#">Mãe e filha</a>
+                </div>
+                <div class="baby">
+                    <a href="#">Baby</a>
+                </div>
+                <div class="promotion">
+                    <a href="#">Promoção</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
